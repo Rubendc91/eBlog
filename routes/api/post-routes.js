@@ -12,6 +12,7 @@ router.post('/', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //update
 router.put('/:id', withAuth, async (req, res) => {
   try {
