@@ -1,5 +1,20 @@
-<div class="posts">
-  {{#each post}}
-
-  {{/each}}
+<div class="posts list-group">
+<ol>
+{{#each posts as |post|}}
+  <ul>
+<article class="post">
+    <div class="title">
+       <a href="post/{{id}}">{{title}}</a>
+    </div>
+    <div class="body">
+        {{post_text}}
+    </div>
+    <div class="meta">
+                    {{!-- FIX---------------{{format_date created_at}} --}}
+        <strong>Posted by {{User.username}} on {{ Post.created_at}}</strong>
+    </div>
+</article>
+  </ul>
+{{/each}}
+</ol>
 </div>

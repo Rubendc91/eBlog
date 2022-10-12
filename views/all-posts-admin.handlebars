@@ -1,6 +1,6 @@
 <div class="posts list-group">
 <ol>
-{{#each post as |post|}}
+{{#each posts as |post|}}
   <ul>
 <article class="post">
     <div class="title">
@@ -10,7 +10,7 @@
         {{post_text}}
     </div>
     <div class="meta">
-        <strong>Posted by {{user.username}} on {{format_date created_at}}</strong>
+        <strong>Posted by {{User.username}} on {{ created_at}}</strong>
     </div>
 </article>
   </ul>

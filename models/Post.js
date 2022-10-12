@@ -37,7 +37,7 @@ class Post extends Model {}
       sequelize,
       freezeTableName: true,
       underscored: true,
-      modelName: 'post'
+      modelName: 'Post'
     }
   );
 
